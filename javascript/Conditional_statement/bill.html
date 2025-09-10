@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bill</title>
+</head>
+<body>
+    <h2>bill</h2>
+    <script>
+        const Rate = 10;
+        const quantity = 20;
+        const bill = Rate* quantity ;
+
+        if(bill > 100)
+    {
+        const discount =  bill / 10 ; 
+        const Payable_amount = bill -discount;
+        console.log ("Discount", discount);
+        console.log("Final_Amount",Payable_amount);
+    }
+    else
+    {
+        console.log("Final_Amount", bill)
+    }
+
+    </script>
+    
+</body>
+</html>
