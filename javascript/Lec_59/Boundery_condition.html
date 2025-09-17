@@ -1,35 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Percentage Progarm</title>
+    <title>Boundry Condition</title>
 </head>
-
 <body>
-    <h1>Percentage Progarm</h1>
+    <h1>Boundry Condition</h1>
     <script>
-        const num = parseFloat(prompt("Enter the Your Percentage"));
-        if (num <=90 ) {     
+      const num = parseFloat(prompt("Enter the Your Percentage"));
+        if (num <=90 && num >= 100 ) {     
             console.log("number is one");
             document.write("Your are in Grade A");
 
         }
-        else if (num <=80 )
+        else if (num <=80   && num >=70 )
         {
             console.log("number is two");
               document.write("Your are in Grade B ");
         }
-        else if( num <=70) 
+          else if( num <=60 && num >= 50) 
         {
             console.log("number is three")
-            document.write("Your are in Grade B");
+            document.write("Grade is D");
         }
-          else if( num <=60) 
+         
+        else if( num <=70  && num >= 60) 
         {
             console.log("number is three")
-            document.write("number is Three");
+            document.write("Your are in Grade   C");
+        }
+        else if( num >100  && num >=0) 
+        {
+            console.log("number is three")
+            document.write("Please Enter vaild Percentage");
         }
         else
         {
@@ -37,7 +41,6 @@
             document.write("Your are in Grade Fail");
         }
     </script>
-
+    
 </body>
-
 </html>
