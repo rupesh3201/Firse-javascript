@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nasted if else</title>
+</head>
+<body>
+    <h1>Result</h1>
+    <script>
+        const marathi = parseInt(prompt("Enter the marks of marathi out of 100"));
+        const Hindi = parseInt(prompt("Enter the marks of Hindi out of 100"));
+        const English = parseInt(prompt("Enter the marks of English out of 100"));
+
+        if(marathi >= 45 && Hindi>=45 && English>=45)
+    {
+        document.write("you are passed")
+    }else if(marathi < 45)
+    {
+        document.write("you are Failed In Marathi")
+
+    }else if(Hindi < 45)
+    {
+        document.write("you are Failed In hindi")
+    }else if(English < 45)
+    {
+        document.write("you are Failed In English")
+
+    }
+    </script>
+    
+</body>
+</html>
