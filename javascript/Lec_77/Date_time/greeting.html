@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Greeting App</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: #f5f5f5;
+    }
+    h1 {
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <h1 id="greeting">Hello!</h1>
+
+  <script>
+    function updateGreeting() {
+      let now = new Date();
+      let hours = now.getHours();
+      let greetingText = "";
+
+      if (hours >= 5 && hours < 12) {
+        greetingText = "🌅 Good Morning!";
+      } else if (hours >= 12 && hours < 17) {
+        greetingText = "☀️ Good Afternoon!";
+      } else if (hours >= 17 && hours < 21) {
+        greetingText = "🌇 Good Evening!";
+      } else {
+        greetingText = "🌙 Good Night!";
+      }
+
+      document.getElementById("greeting").textContent = greetingText;
+
+      // Run again after 1 minute (60000 ms) to keep greeting updated
+      setTimeout(updateGreeting, 60000);
+    }
+
+    // Initial call
+    updateGreeting();
+  </script>
+</body>
+</html>
