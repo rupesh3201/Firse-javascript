@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clock</title>
+</head>
+<body>
+    <h1>Indian Clock</h1>
+    <div>
+        <h2>current time <span id="time">00:00:00</span></h2>
+        <h2>Date <span id="date">loading</span></h2>
+    </div>
+    <script>
+        function updateClock()
+        {
+            const now = new Date();
+            let hours = now.getHours();
+            let minute = now.getMinutes();
+            let seconds = now.getSeconds();
+
+            const timeString = hours + ":" + minute + ":" + seconds;
+            console.log(timeString);
+
+        }
+        updateClock();
+    </script>
+</body>
+</html>
