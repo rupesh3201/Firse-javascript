@@ -11,7 +11,11 @@
         function sayHello()
         {
             console.log("hello")
+            return sayHello;
         }
+        console.log("A");
+        setTimeout(sayHello,5000);
+        console.log("B");
     </script>
     
 </body>
