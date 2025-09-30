@@ -8,12 +8,15 @@
 <body>
     <h1>forEach</h1>
     <script>
-        const arr = ["A","B","C","D"];
+        const arr = [1,2,3,4,5];
         let result =arr.forEach((element,index)=>
     {
-        console.log(`element:${element}, index:${index}`)
+        const ans = element*2;
+        console.log(`element:${element}, index:${index}, anser:${ans}`)
     })
-    console.log(result);
+    console.log(`orginal array:${arr}`);
+    console.log(`updated array:${result}`);
+
     </script>
 
     
